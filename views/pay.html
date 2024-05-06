@@ -1,0 +1,87 @@
+<!-- added -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<style>
+  body{
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .cont{
+    display: flex;
+    flex-direction:column;
+    align-items:center ;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(193, 193, 255);
+    /* background-image: url('../static/img/new.png'); */
+    /* filter: invert(1); */
+  }
+  .cont>img{
+    height: 65vh;
+    width: 25vw;
+  }
+  #rzp-button1{
+    margin: 4px auto;
+    display: block;
+    padding: 5px 12px;
+    background: #302d2d;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    outline: none;
+  }
+</style>
+<body>
+  <div class="cont">
+    <img src="../static/img/apple.png" alt="">
+    <h1>Buy subscription</h1>
+     <!-- <button class="btn">Pay</button>  -->
+     <div class="container">
+        <div class="option">
+          <button id="rzp-button1">Pay</button>
+          <h3><em>pay using Razorpay</em></h3>
+        </div>
+     </div>
+    </div>
+    <!-- <button id="rzp-button1">Pay</button> -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_GkaB7N8ILSbRLV", // Enter the Key ID generated from the Dashboard
+    "amount": "20000000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "currency": "INR",
+    "name": "Acme Corp", //your business name
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": "order_MSGom3smkslPXV", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
+    "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
+        "name": "Gaurav Kumar", //your customer's name
+        "email": "gaurav.kumar@example.com",
+        "contact": "9000090000" //Provide the customer's phone number for better conversion rates 
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
+</body>
+</html>

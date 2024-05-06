@@ -1,0 +1,239 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;  /* pages will not overlap */
+    overflow: hidden;  /* overflowing content will be hidden */ 
+}
+#page00>nav{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 190px;
+    height: 10vh;
+    width: 100vw;
+    position: absolute; /* allows you to literally place any page element exactly where you want it */
+    top: 0%;
+    color: #ffffff;
+    background-color: #000000;
+}
+#page00>nav>button{
+    padding: 2px 10px;
+    border-radius: 50px;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ffffff;
+}
+#page00>nav>h3{
+    font-weight: 900;
+}
+#page00{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+#page00>img{
+  object-fit: contain;
+  display: block;
+  margin-top: 55px;
+  height: 120px;
+  width: 240px;
+  transition: 0.3s;
+}
+#page0{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100vw;
+    background-color: #000000;
+}
+#page0 h1{
+    margin-top: 0px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+}
+#page0 img {
+    position: relative;
+    /* margin: auto; */
+    margin: 35px;
+    margin-top: 20px;
+    height: 200px;
+    width: 170px;
+    filter: invert(1);
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+#page>video{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    background-color: #000000;
+}
+#page1 img{
+height: 70vh;
+width: 60vw;
+margin-top: -50px;
+margin-left: 240px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+#container h1{
+    margin-top: 40px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    margin-left: 20px;
+    margin-right: 250px;
+}
+h2{
+    font-size: 50px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 420px;
+}
+#container img{
+    position: relative;
+    margin-top: 48px;
+    height: 80px;
+    width: 70px;
+    filter: invert(1);
+}
+#page2,#page7{
+    display: flex;
+    position: relative;
+    height: 84.2vh;
+    width: 100vw;
+    background-color: rgb(20, 229, 27);
+}
+#page2>video,#page7>video{
+    height: 84.2vh;
+    width: 70vw;
+    object-fit: cover;
+    position: absolute;
+    margin-left: 30%;
+}
+#names{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 90px;
+}
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cedarville Cursive', cursive;
+    font-size: 70px;
+    color: #000000;
+}
+#white{
+    font-size: 90px ;
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cedarville Cursive',cursive;
+    color: #fff;
+}
+#page3{
+    height: 30vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+#page3>img{
+    object-fit: contain;
+  display: block;
+  height: 180px;
+  width: 400px;
+  margin: auto;
+  transition: 0.3s;
+}
+#page4{
+    padding-left: 50px;
+    position: relative;
+    height: 107vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+#page4>h3{
+    padding-top: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Cedarville Cursive',cursive;
+color: rgb(228, 159, 237);
+font-size: 60px;
+}
+#q{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#cont{
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+}
+#q>h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Cedarville Cursive',cursive;
+}
+.btn{
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 50px;
+    font-size:50px ;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.para{
+    font-size: 15px;
+    display: none;
+    color: aquamarine;
+}
+#nav1 ul{
+    padding-top:15px;
+    padding-bottom: 5px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    background-color: #000000;
+    list-style: none;
+}
+#nav1 a{
+    color: rgb(255, 255, 255);
+    margin: 0px 42px;
+    text-decoration: none;
+}

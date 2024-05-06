@@ -1,0 +1,24 @@
+::-webkit-scrollbar {
+    display: none;
+ }
+ .container {
+    display: flex;
+     flex-direction: row;
+     width: 100vw;
+     overflow-x: scroll;
+     white-space: nowrap;
+     background-color: #fff;
+ }
+ img{
+     height: 200px;
+     width: 350px;
+ }
+ #page0{margin-top:-10px;height:240px;background-color: red;}
+ #page>video,#page{
+    height: 80vh;
+    width: 100vw;
+ }
+
+ #nav1 ul{
+   padding-bottom: 20px;
+ }

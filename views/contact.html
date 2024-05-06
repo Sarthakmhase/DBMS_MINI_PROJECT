@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Apple-support</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+ }
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 350px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 70%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #ff930e,
+        #e0d61a
+    );
+    left: -100px;
+    top: -130px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #d400ff,
+        #c881ee
+    );
+    right: -100px;
+    bottom: 70px;
+}
+form{
+    height: 530px;
+    width: 400px;
+    background-color: rgba(232, 207, 207, 0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #e7dada;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(214, 232, 206, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+    </style>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="../static/contact.css">
+</head>
+<body>
+    <div id="page000">
+        <nav id="nav1">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/arcade">Arcade</a></li>
+                <li><a href="/tv">tv+</a></li>
+                <li><a href="/music">Music</a></li>
+                <li><a href="/fitness">Fitness</a></li>
+                <li><a href="/icloud">iCloud</a></li>
+                <li><a href="/contact">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- <div id="page0">       
+        <h1>Fitness</h1>
+    </div> -->
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+<form action="/contact" method="post">
+        <h3>Get the help</h3>
+        <label for="name">Full Name</label>
+        <input name="name" type="text" id="name" placeholder="Enter full name" id="name">
+        <label for="username">Email</label>
+        <input name="email" type="email" id="email" placeholder="Enter email" id="email">
+        <label for="query">Query</label>
+        <input name="help" type="text" id="help" placeholder="how may i help you ?" id="query">
+        <label for="location">Location</label>
+        <input name="location" type="text" id="location" placeholder="Please enter your location" id="location">
+        <button>Send</button>
+    </form>
+</body>
+</html>

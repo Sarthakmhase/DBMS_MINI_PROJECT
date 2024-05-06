@@ -1,0 +1,37 @@
+*{
+    margin-bottom: -4px;
+}
+#nav1{
+    height: 9vh;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+.container>img{
+    margin: 0px;
+    padding: 0px;
+    object-fit: contain;
+    height: 384.9px;
+}
+#nav1 ul{
+    padding-bottom: 20px;
+}
+#page0>h1{
+    font-size:60px ;
+}
+#page0{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+#page6{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+#page6>img{
+    padding: 20px;
+}

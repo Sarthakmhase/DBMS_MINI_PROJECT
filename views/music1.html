@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::-webkit-scrollbar {
+           display: none;
+        }
+        .container {
+           display: flex;
+            flex-direction: row;
+            width: 100vw;
+            overflow-x: scroll;
+            white-space: nowrap;
+            background-color: #fff;
+        }
+
+        img{
+            height: 500px;;width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="flavoursContainer">
+        <div>
+            <img src="../static/img/l1.png" alt="">
+        </div>
+        <div>
+            <img src="../static/img/l2.png" alt="">
+        </div>
+        <div>
+            <img src="../static/img/l3.png" alt="">
+        </div>
+        <div>
+            <img src="../static/img/l4.png" alt="">
+        </div>
+        <div>
+            <img src="../static/img/l5.png" alt="">
+        </div>
+    </div>
+    <script>
+        const flavoursContainer = document.getElementById('flavoursContainer');
+        const flavoursScrollWidth = flavoursContainer.scrollWidth;
+
+        window.addEventListener('load', () => {
+            self.setInterval(() => {
+                if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
+                    flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
+                }
+            }, 15);
+        });
+    </script>
+</body>
+
+</html>

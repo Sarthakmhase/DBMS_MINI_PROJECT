@@ -1,0 +1,21 @@
+#nav1 ul{
+    padding-bottom: 20px;
+  }
+.images{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}img{
+    margin-top: 15px;
+    margin-left: 45px;
+    padding: 10px;
+}
+#page0{margin-top:-10px;height:230px;background-color: rgb(149, 251, 255);color: black;}
+#page0 h1{
+    color: black;font-size: 85px;
+}
+#page0 img{
+    filter: invert(0);
+}
+

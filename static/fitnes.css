@@ -1,0 +1,14 @@
+::-webkit-scrollbar {
+  display: none;
+}
+#nav1 ul{
+   padding-bottom: 20px;
+ }
+body{
+  background-color: rgb(0, 0, 0);
+}
+video{
+  height: 40vh;
+  width: 40vw;
+}
+#page0{margin-top:-10px;height:130px;background-color: rgb(0, 0, 0);}
